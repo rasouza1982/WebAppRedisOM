@@ -2,7 +2,6 @@
 using Microsoft.Extensions.Logging;
 using Redis.OM;
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using WebAppRedisOM.Domain;
@@ -67,17 +66,17 @@ namespace WebAppRedisOM.Controllers
         {
             var theaters = _distributedCache.RedisCollection<Theater>();            
 
-            await theaters.InsertAsync(new Theater() { BoxOfficeId = "6080", Name = "Cinépolis JK Iguatemi", Datetime = DateTime.Now, ErrorDescription = "Timeout" });
-            await theaters.InsertAsync(new Theater() { BoxOfficeId = "6080", Name = "Cinépolis JK Iguatemi", Datetime = DateTime.Now, ErrorDescription = "Timeout" });
-            await theaters.InsertAsync(new Theater() { BoxOfficeId = "6080", Name = "Cinépolis JK Iguatemi", Datetime = DateTime.Now, ErrorDescription = "Timeout" });
-            await theaters.InsertAsync(new Theater() { BoxOfficeId = "6080", Name = "Cinépolis JK Iguatemi", Datetime = DateTime.Now, ErrorDescription = "Timeout" });
-            await theaters.InsertAsync(new Theater() { BoxOfficeId = "6080", Name = "Cinépolis JK Iguatemi", Datetime = DateTime.Now, ErrorDescription = "Timeout" });
-            await theaters.InsertAsync(new Theater() { BoxOfficeId = "6080", Name = "Cinépolis JK Iguatemi", Datetime = DateTime.Now, ErrorDescription = "Timeout" });
-            await theaters.InsertAsync(new Theater() { BoxOfficeId = "6080", Name = "Cinépolis JK Iguatemi", Datetime = DateTime.Now, ErrorDescription = "Timeout" });
-            await theaters.InsertAsync(new Theater() { BoxOfficeId = "6025", Name = "Cinépolis Iguatemi Alphavile", Datetime = DateTime.Now, ErrorDescription = "Timeout" });
-            await theaters.InsertAsync(new Theater() { BoxOfficeId = "6025", Name = "Cinépolis Iguatemi Alphavile", Datetime = DateTime.Now, ErrorDescription = "Timeout" });
-            await theaters.InsertAsync(new Theater() { BoxOfficeId = "6025", Name = "Cinépolis Iguatemi Alphavile", Datetime = DateTime.Now, ErrorDescription = "Timeout" });
-            await theaters.InsertAsync(new Theater() { BoxOfficeId = "6015", Name = "Cinépolis Largo XIII", Datetime = DateTime.Now, ErrorDescription = "Timeout" });
+            await theaters.InsertAsync(new Theater() { BoxOfficeId = "6080", Name = "Test1", Datetime = DateTime.Now, ErrorDescription = "Timeout" });
+            await theaters.InsertAsync(new Theater() { BoxOfficeId = "6080", Name = "Test1", Datetime = DateTime.Now, ErrorDescription = "Timeout" });
+            await theaters.InsertAsync(new Theater() { BoxOfficeId = "6080", Name = "Test1", Datetime = DateTime.Now, ErrorDescription = "Timeout" });
+            await theaters.InsertAsync(new Theater() { BoxOfficeId = "6080", Name = "Test1", Datetime = DateTime.Now, ErrorDescription = "Timeout" });
+            await theaters.InsertAsync(new Theater() { BoxOfficeId = "6080", Name = "Test1", Datetime = DateTime.Now, ErrorDescription = "Timeout" });
+            await theaters.InsertAsync(new Theater() { BoxOfficeId = "6080", Name = "Test1", Datetime = DateTime.Now, ErrorDescription = "Timeout" });
+            await theaters.InsertAsync(new Theater() { BoxOfficeId = "6080", Name = "Test1", Datetime = DateTime.Now, ErrorDescription = "Timeout" });
+            await theaters.InsertAsync(new Theater() { BoxOfficeId = "6025", Name = "Test2", Datetime = DateTime.Now, ErrorDescription = "Timeout" });
+            await theaters.InsertAsync(new Theater() { BoxOfficeId = "6025", Name = "Test2", Datetime = DateTime.Now, ErrorDescription = "Timeout" });
+            await theaters.InsertAsync(new Theater() { BoxOfficeId = "6025", Name = "Test2", Datetime = DateTime.Now, ErrorDescription = "Timeout" });
+            await theaters.InsertAsync(new Theater() { BoxOfficeId = "6015", Name = "Test3", Datetime = DateTime.Now, ErrorDescription = "Timeout" });
 
             return Ok();
         }
